@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 AppBar makeSearchBar() {
   return AppBar(
+    elevation: 0,
     title: Container(
       width: double.infinity,
       height: 40,

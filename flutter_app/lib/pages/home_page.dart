@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/featured_creator_list.dart';
 import '../widgets/make_search_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: makeSearchBar(),
-      body: Center(child: Text("App content")),
+      body: const FeaturedCreatorList(),
     );
   }
 }
