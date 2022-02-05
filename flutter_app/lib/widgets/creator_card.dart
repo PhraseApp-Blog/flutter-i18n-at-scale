@@ -2,10 +2,18 @@ import 'package:flutter/material.dart';
 
 class CreatorCard extends StatelessWidget {
   final String name;
+  final String profileImage;
+  final String productImage1;
+  final String productImage2;
+  final List<String>? specialties;
 
   const CreatorCard({
     Key? key,
     this.name = '',
+    this.profileImage = '',
+    this.productImage1 = '',
+    this.productImage2 = '',
+    this.specialties,
   }) : super(key: key);
 
   @override
@@ -21,7 +29,7 @@ class CreatorCard extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(50),
                 child: Image.asset(
-                  "assets/img/lorem-face-330.jpg",
+                  "assets/img/$profileImage",
                   width: 50,
                   height: 50,
                 ),
@@ -30,7 +38,7 @@ class CreatorCard extends StatelessWidget {
                 padding: const EdgeInsetsDirectional.only(start: 8.0),
                 child: Expanded(
                   child: Text(
-                    "Hasan Elsabry".toUpperCase(),
+                    name.toUpperCase(),
                     textAlign: TextAlign.start,
                     style: theme.textTheme.bodyText1,
                   ),
@@ -71,12 +79,9 @@ class CreatorCard extends StatelessWidget {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text("• Leather"),
-                            const Text("• Moroccan leather"),
-                            const Text("• Belts"),
-                            const Text("• Wallets"),
-                          ],
+                          children:
+                              specialties?.map((s) => Text("• $s")).toList() ??
+                                  [],
                         ),
                       ],
                     ),
@@ -88,7 +93,7 @@ class CreatorCard extends StatelessWidget {
                     bottomLeft: Radius.circular(4),
                   ),
                   child: Image.asset(
-                    "assets/img/asiya-kiev-gUzOZaswagA-unsplash.jpg",
+                    "assets/img/$productImage1",
                     width: 100,
                     height: 100,
                   ),
@@ -99,7 +104,7 @@ class CreatorCard extends StatelessWidget {
                     bottomRight: Radius.circular(4),
                   ),
                   child: Image.asset(
-                    "assets/img/jacob-bentzinger-USy_fK9s9hA-unsplash.jpg",
+                    "assets/img/$productImage2",
                     width: 100,
                     height: 100,
                   ),
