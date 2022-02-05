@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/featured_creator_list.dart';
+import 'package:flutter_app/widgets/make_bottom_nav_bar.dart';
 import '../widgets/make_search_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: makeSearchBar(),
       body: const FeaturedCreatorList(),
+      bottomNavigationBar: makeBottomNavBar(context),
     );
   }
 }
