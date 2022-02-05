@@ -1,29 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 BottomNavigationBar makeBottomNavBar(BuildContext context) {
   var theme = Theme.of(context);
+  var t = AppLocalizations.of(context)!;
 
   return BottomNavigationBar(
     type: BottomNavigationBarType.fixed,
     selectedItemColor: theme.primaryColorDark,
     selectedFontSize: 13,
     unselectedFontSize: 13,
-    items: const [
+    items: [
       BottomNavigationBarItem(
-        label: "Featured",
-        icon: Icon(Icons.star),
+        label: t.featured,
+        icon: const Icon(Icons.star),
       ),
       BottomNavigationBarItem(
-        label: "Search",
-        icon: Icon(Icons.search),
+        label: t.search,
+        icon: const Icon(Icons.search),
       ),
       BottomNavigationBarItem(
-        label: "Cart",
-        icon: Icon(Icons.shopping_cart),
+        label: t.cart,
+        icon: const Icon(Icons.shopping_cart),
       ),
       BottomNavigationBarItem(
-        label: "Account",
-        icon: Icon(Icons.account_circle),
+        label: t.account,
+        icon: const Icon(Icons.account_circle),
       ),
     ],
   );

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:intl/intl.dart' as intl;
 
 class CreatorCard extends StatelessWidget {
   final String name;
@@ -19,6 +21,7 @@ class CreatorCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    var t = AppLocalizations.of(context)!;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12.0),
@@ -52,7 +55,7 @@ class CreatorCard extends StatelessWidget {
                     color: theme.primaryColorDark,
                     borderRadius: const BorderRadius.all(Radius.circular(100))),
                 child: Text(
-                  "Top Rated",
+                  t.topRated,
                   style: TextStyle(color: theme.colorScheme.onPrimary),
                 ),
               ),
@@ -72,9 +75,11 @@ class CreatorCard extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(bottom: 4.0),
                           child: Text(
-                            "Specialties".toUpperCase(),
+                            t.specialties.toUpperCase(),
                             style: const TextStyle(
-                                fontSize: 12, fontWeight: FontWeight.w300),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w300,
+                            ),
                           ),
                         ),
                         Column(
@@ -88,10 +93,7 @@ class CreatorCard extends StatelessWidget {
                   ),
                 ),
                 ClipRRect(
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(4),
-                    bottomLeft: Radius.circular(4),
-                  ),
+                  borderRadius: directionalBorderRadiusFor(context, "left"),
                   child: Image.asset(
                     "assets/img/$productImage1",
                     width: 100,
@@ -99,10 +101,7 @@ class CreatorCard extends StatelessWidget {
                   ),
                 ),
                 ClipRRect(
-                  borderRadius: const BorderRadius.only(
-                    topRight: Radius.circular(4),
-                    bottomRight: Radius.circular(4),
-                  ),
+                  borderRadius: directionalBorderRadiusFor(context, "right"),
                   child: Image.asset(
                     "assets/img/$productImage2",
                     width: 100,
@@ -115,5 +114,23 @@ class CreatorCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  BorderRadius? directionalBorderRadiusFor(BuildContext context, String side) {
+    const radius = Radius.circular(4);
+
+    if (intl.Bidi.isRtlLanguage(Localizations.localeOf(context).languageCode)) {
+      if (side == "left") {
+        return const BorderRadius.only(topRight: radius, bottomRight: radius);
+      } else {
+        return const BorderRadius.only(topLeft: radius, bottomLeft: radius);
+      }
+    } else {
+      if (side == "left") {
+        return const BorderRadius.only(topLeft: radius, bottomLeft: radius);
+      } else {
+        return const BorderRadius.only(topRight: radius, bottomRight: radius);
+      }
+    }
   }
 }
