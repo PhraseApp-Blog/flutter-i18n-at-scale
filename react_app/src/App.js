@@ -1,4 +1,5 @@
-import * as React from "react";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -23,6 +24,14 @@ const theme = createTheme({
 });
 
 export default function App() {
+  const { i18n, t } = useTranslation();
+
+  useEffect(() => {
+    document.dir = i18n.dir();
+    document.body.setAttribute("dir", i18n.dir());
+    document.title = t("appTitle");
+  }, [i18n, t, i18n.language]);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

@@ -9,6 +9,7 @@ import {
   Stack,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { dirStyle } from "../../services/i18n";
 
 export default function CreatorCard(props) {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ export default function CreatorCard(props) {
       sx={{
         display: "flex",
         flexDirection: "column",
+        height: "310px",
       }}
     >
       <Box
@@ -29,15 +31,21 @@ export default function CreatorCard(props) {
           p: 1,
         }}
       >
-        <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
+        <Stack direction="row" sx={{ alignItems: "center" }}>
           <Avatar alt={props.name} src={`/img/${props.avatarImage}`} />
-          <Typography sx={{ textTransform: "uppercase", fontSize: "0.85rem" }}>
+          <Typography
+            sx={{
+              textTransform: "uppercase",
+              fontSize: "0.85rem",
+              ...dirStyle({ ml: 1 }),
+            }}
+          >
             {t(props.name)}
           </Typography>
         </Stack>
 
         <Chip
-          label="Top Rated"
+          label={t("topRated")}
           color="primary"
           size="small"
           sx={{ width: "80px" }}
@@ -60,7 +68,7 @@ export default function CreatorCard(props) {
         >
           {t("specialties")}
         </Typography>
-        <Typography component="ul" sx={{ pl: 2, fontSize: "0.85rem" }}>
+        <Typography component="ul" sx={{ px: 2, fontSize: "0.85rem" }}>
           {props.specialties.map((s) => (
             <li key={s}>{t(s)}</li>
           ))}

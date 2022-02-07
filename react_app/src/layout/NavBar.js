@@ -14,6 +14,8 @@ import {
   AccountCircle as AccountIcon,
 } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
+import LocaleSwitcher from "../features/L10n/LocaleSwitcher";
+import { dirStyle } from "../services/i18n";
 
 const startMenuItems = {
   featured: <StarIcon />,
@@ -34,14 +36,22 @@ export default function NavBar() {
           {t("appTitle")}
         </Typography>
 
-        <Stack direction="row" spacing={2} sx={{ flexGrow: 1, pl: 4 }}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{ flexGrow: 1, ...dirStyle({ pl: 4 }) }}
+        >
           {Object.keys(startMenuItems).map((mi) => (
-            <Button
-              key={mi}
-              variant="text"
-              sx={{ color: "#fff" }}
-              startIcon={startMenuItems[mi]}
-            >
+            <Button key={mi} variant="text" sx={{ color: "#fff" }}>
+              <Box
+                sx={{
+                  ...dirStyle({ ml: "-4px", mr: "8px" }),
+                  display: "inherit",
+                }}
+                component="span"
+              >
+                {startMenuItems[mi]}
+              </Box>
               {t(mi)}
             </Button>
           ))}
@@ -50,6 +60,8 @@ export default function NavBar() {
         <Box
           sx={{ display: "flex", flexGrow: 0, flexDirection: "row-reverse" }}
         >
+          <LocaleSwitcher />
+
           {Object.keys(endMenuItems).map((mi) => (
             <IconButton
               key={mi}

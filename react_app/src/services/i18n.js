@@ -13,4 +13,27 @@ i18next
     },
   });
 
+export const dirStyle = (styles) => {
+  const dir = i18next.dir(i18next.language || "en");
+  let result = {};
+
+  if (dir === "rtl") {
+    Object.keys(styles).forEach((s) => {
+      if (s.length === 2) {
+        if (s.charAt(1) === "l") {
+          result[`${s.charAt(0)}r`] = styles[s];
+        } else if (s.charAt(1) === "r") {
+          result[`${s.charAt(0)}l`] = styles[s];
+        }
+      } else {
+        result[s] = styles[s];
+      }
+    });
+
+    return result;
+  }
+
+  return styles;
+};
+
 export default i18next;
