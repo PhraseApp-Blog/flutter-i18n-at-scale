@@ -13,6 +13,7 @@ import {
   ShoppingCart as CartIcon,
   AccountCircle as AccountIcon,
 } from "@mui/icons-material";
+import { useTranslation } from "react-i18next";
 
 const startMenuItems = {
   featured: <StarIcon />,
@@ -24,11 +25,13 @@ const endMenuItems = {
 };
 
 export default function NavBar() {
+  const { t } = useTranslation();
+
   return (
     <AppBar position="fixed" elevation={0}>
       <Toolbar>
         <Typography variant="h6" color="inherit" noWrap>
-          HandiRaft
+          {t("appTitle")}
         </Typography>
 
         <Stack direction="row" spacing={2} sx={{ flexGrow: 1, pl: 4 }}>
@@ -39,7 +42,7 @@ export default function NavBar() {
               sx={{ color: "#fff" }}
               startIcon={startMenuItems[mi]}
             >
-              {mi}
+              {t(mi)}
             </Button>
           ))}
         </Stack>
@@ -50,8 +53,8 @@ export default function NavBar() {
           {Object.keys(endMenuItems).map((mi) => (
             <IconButton
               key={mi}
-              aria-label={mi}
-              title={mi}
+              aria-label={t(mi)}
+              title={t(mi)}
               sx={{ color: "#fff" }}
             >
               {endMenuItems[mi]}

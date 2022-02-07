@@ -1,6 +1,9 @@
 import { Box, Typography, Link } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
       <Typography
@@ -9,11 +12,11 @@ export default function Footer() {
         color="text.secondary"
         component="p"
       >
-        Companion demo app for Phrase blog article
+        {t("footer")}
       </Typography>
 
       <Typography variant="body2" color="text.secondary" align="center">
-        {"Copyright © "}
+        {`${t("copyright")} © `}
         <Link color="inherit" href="https://phrase.com/">
           Phrase
         </Link>{" "}

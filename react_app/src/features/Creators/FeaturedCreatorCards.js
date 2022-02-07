@@ -1,57 +1,57 @@
 import { Grid, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import CreatorCard from "./CreatorCard";
 
 const creators = [
   {
-    name: "Hala Mahmoud",
+    name: "halaMahmoud",
     avatarImage: "lorem-face-6536.jpg",
     productImage1: "/img/asiya-kiev-gUzOZaswagA-unsplash.jpg",
     productImage2: "/img/jacob-bentzinger-USy_fK9s9hA-unsplash.jpg",
-    specialties: ["Moroccan leather", "Belts", "Wallets"],
+    specialties: ["morrocanLeather", "belts", "wallets"],
   },
   {
-    name: "Daniel Garcia",
+    name: "danielGarcia",
     avatarImage: "lorem-face-4343.jpg",
     productImage1: "/img/max-bohme-ND477oBF3i4-unsplash.jpg",
     productImage2: "/img/thomas-john-9dZAGDv-FxU-unsplash.jpg",
-    specialties: [
-      "Mexican Day of the Dead (Día de Muertos) sculptures",
-      "Ceramic sculptures",
-    ],
+    specialties: ["dayOfDeadSculptures", "ceramicSculptures"],
   },
   {
-    name: "Mary Shayk",
+    name: "maryShayk",
     avatarImage: "lorem-face-4999.jpg",
     productImage1: "/img/eugenia-romanova-cJnwJxXABiY-unsplash.jpg",
     productImage2: "/img/denis-kirichkov-5h12h1Vwzr0-unsplash.jpg",
-    specialties: ["Wooden Art", "Intricate woodworking", "Facades"],
+    specialties: ["woodenArt", "intricateWoodworking", "facades"],
   },
   {
-    name: "Rui Yang",
+    name: "ruiYang",
     avatarImage: "lorem-face-1140.jpg",
     productImage1: "/img/jay-huang-7c4lkKgnOko-unsplash.jpg",
     productImage2: "/img/pille-r-priske-z_MwDqdYFLU-unsplash.jpg",
-    specialties: ["Chinese teapots", "Woodworking", "Reusable household items"],
+    specialties: ["chineseTeapots", "woodworking", "reusableHouseholdItems"],
   },
   {
-    name: "Loyiso Zuma",
+    name: "loyisoZuma",
     avatarImage: "lorem-face-2187.jpg",
     productImage1:
       "https://source.unsplash.com/random/200x200/?african,fashion",
     productImage2:
       "https://source.unsplash.com/random/200x200/?african,women,fashion",
-    specialties: ["African fashion", "Women's fashion"],
+    specialties: ["africanFashion", "womensFashion"],
   },
   {
-    name: "Elizabeth Brenton",
+    name: "lizBrenton",
     avatarImage: "lorem-face-2951.jpg",
     productImage1: "https://source.unsplash.com/random/200x200/?woodworking",
     productImage2: "https://source.unsplash.com/random/200x200/?metalworking",
-    specialties: ["Nova Scotian woodworking", "Metalworking"],
+    specialties: ["novaScotianWoodworking", "metalworking"],
   },
 ];
 
 export default function FeaturedCreatorCards() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Typography
@@ -59,7 +59,7 @@ export default function FeaturedCreatorCards() {
         component="h2"
         sx={{ textAlign: "center", mb: 2 }}
       >
-        Featured Creators
+        {t("featuredCreators")}
       </Typography>
 
       <Grid container spacing={2}>

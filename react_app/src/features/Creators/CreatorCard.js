@@ -8,8 +8,11 @@ import {
   Chip,
   Stack,
 } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export default function CreatorCard(props) {
+  const { t } = useTranslation();
+
   return (
     <Card
       sx={{
@@ -29,7 +32,7 @@ export default function CreatorCard(props) {
         <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
           <Avatar alt={props.name} src={`/img/${props.avatarImage}`} />
           <Typography sx={{ textTransform: "uppercase", fontSize: "0.85rem" }}>
-            {props.name}
+            {t(props.name)}
           </Typography>
         </Stack>
 
@@ -55,11 +58,11 @@ export default function CreatorCard(props) {
             textTransform: "uppercase",
           }}
         >
-          Specialties
+          {t("specialties")}
         </Typography>
         <Typography component="ul" sx={{ pl: 2, fontSize: "0.85rem" }}>
           {props.specialties.map((s) => (
-            <li key={s}>{s}</li>
+            <li key={s}>{t(s)}</li>
           ))}
         </Typography>
       </CardContent>
