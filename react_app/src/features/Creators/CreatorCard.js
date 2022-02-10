@@ -32,7 +32,7 @@ export default function CreatorCard(props) {
         }}
       >
         <Stack direction="row" sx={{ alignItems: "center" }}>
-          <Avatar alt={props.name} src={`/img/${props.avatarImage}`} />
+          <Avatar alt={t(props.name)} src={`/img/${props.avatarImage}`} />
           <Typography
             sx={{
               textTransform: "uppercase",
