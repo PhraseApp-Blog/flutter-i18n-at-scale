@@ -1,26 +1,98 @@
 {
-  "appTitle": "HandiCraft",
-  "featuredCreators": "Featured Creators",
-  "searchPlaceholder": "Find creator or product",
-  "topRated": "Top Rated",
-  "featured": "Featured",
-  "search": "Search",
-  "cart": "Cart",
   "account": "Account",
-  "halaMahmoud": "Hala Mahmoud",
-  "danielGarcia": "Daniel Garcia",
-  "maryShayk": "Mary Shayk",
-  "ruiYang": "Rui Yang",
-  "specialties": "Specialties",
-  "morrocanLeather": "Moroccan Leather",
+  "@account": {
+    "type": "text"
+  },
+  "appTitle": "HandiCraft",
+  "@appTitle": {
+    "type": "text"
+  },
   "belts": "Belts",
-  "wallets": "Wallets",
-  "dayOfDeadSculptures": "Mexican Day of the Dead (Día de Muertos) sculptures",
+  "@belts": {
+    "type": "text"
+  },
+  "cart": "Cart",
+  "@cart": {
+    "type": "text"
+  },
   "ceramicSculptures": "Ceramic sculptures",
-  "woodenArt": "Wooden Art",
-  "intricateWoodworking": "Intricate woodworking",
-  "facades": "Facades",
+  "@ceramicSculptures": {
+    "type": "text"
+  },
   "chineseTeapots": "Chinese teapots",
+  "@chineseTeapots": {
+    "type": "text"
+  },
+  "danielGarcia": "Daniel Garcia",
+  "@danielGarcia": {
+    "type": "text"
+  },
+  "dayOfDeadSculptures": "Mexican Day of the Dead (Día de Muertos) sculptures",
+  "@dayOfDeadSculptures": {
+    "type": "text"
+  },
+  "facades": "Facades",
+  "@facades": {
+    "type": "text"
+  },
+  "featured": "Featured",
+  "@featured": {
+    "type": "text"
+  },
+  "featuredCreators": "Featured Creators",
+  "@featuredCreators": {
+    "type": "text"
+  },
+  "halaMahmoud": "Hala Mahmoud",
+  "@halaMahmoud": {
+    "type": "text"
+  },
+  "intricateWoodworking": "Intricate woodworking",
+  "@intricateWoodworking": {
+    "type": "text"
+  },
+  "maryShayk": "Mary Shayk",
+  "@maryShayk": {
+    "type": "text"
+  },
+  "morrocanLeather": "Moroccan Leather",
+  "@morrocanLeather": {
+    "type": "text"
+  },
+  "resuableHouseholdItems": "Reusable household items",
+  "@resuableHouseholdItems": {
+    "type": "text"
+  },
+  "ruiYang": "Rui Yang",
+  "@ruiYang": {
+    "type": "text"
+  },
+  "search": "Search",
+  "@search": {
+    "type": "text"
+  },
+  "searchPlaceholder": "Find creator or product",
+  "@searchPlaceholder": {
+    "type": "text"
+  },
+  "specialties": "Specialties",
+  "@specialties": {
+    "type": "text"
+  },
+  "topRated": "Top Rated",
+  "@topRated": {
+    "type": "text"
+  },
+  "wallets": "Wallets",
+  "@wallets": {
+    "type": "text"
+  },
+  "woodenArt": "Wooden Art",
+  "@woodenArt": {
+    "type": "text"
+  },
   "woodworking": "Woodworking",
-  "resuableHouseholdItems": "Reusable household items"
+  "@woodworking": {
+    "type": "text"
+  }
 }

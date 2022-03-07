@@ -1,26 +1,98 @@
 {
-  "appTitle": "هانديكرافت",
-  "featuredCreators": "الحرفيين المميزين",
-  "searchPlaceholder": "ابحث عن حرفي أو منتج",
-  "topRated": "الأعلى تقييمًا",
-  "featured": "متميز",
-  "search": "بحث",
-  "cart": "عربة التسوق",
   "account": "الحساب",
-  "halaMahmoud": "هاله محمود",
-  "danielGarcia": "دانيال جارسيا",
-  "maryShayk": "ماري شايك",
-  "ruiYang": "ريو يانج",
-  "specialties": "التخصصات",
-  "morrocanLeather": "جلد مغربي",
+  "@account": {
+    "type": "text"
+  },
+  "appTitle": "هانديكرافت",
+  "@appTitle": {
+    "type": "text"
+  },
   "belts": "أحزمة",
-  "wallets": "محافظ",
-  "dayOfDeadSculptures": "تماثيل يوم الموتى المكسيكي",
+  "@belts": {
+    "type": "text"
+  },
+  "cart": "عربة التسوق",
+  "@cart": {
+    "type": "text"
+  },
   "ceramicSculptures": "منحوتات خزفية",
-  "woodenArt": "فن خشبي",
-  "intricateWoodworking": "النجارة المعقدة",
-  "facades": "واجهات",
+  "@ceramicSculptures": {
+    "type": "text"
+  },
   "chineseTeapots": "أقداح الشاي الصينية",
+  "@chineseTeapots": {
+    "type": "text"
+  },
+  "danielGarcia": "دانيال جارسيا",
+  "@danielGarcia": {
+    "type": "text"
+  },
+  "dayOfDeadSculptures": "تماثيل يوم الموتى المكسيكي",
+  "@dayOfDeadSculptures": {
+    "type": "text"
+  },
+  "facades": "واجهات",
+  "@facades": {
+    "type": "text"
+  },
+  "featured": "متميز",
+  "@featured": {
+    "type": "text"
+  },
+  "featuredCreators": "الحرفيين المميزين",
+  "@featuredCreators": {
+    "type": "text"
+  },
+  "halaMahmoud": "هاله محمود",
+  "@halaMahmoud": {
+    "type": "text"
+  },
+  "intricateWoodworking": "النجارة المعقدة",
+  "@intricateWoodworking": {
+    "type": "text"
+  },
+  "maryShayk": "ماري شايك",
+  "@maryShayk": {
+    "type": "text"
+  },
+  "morrocanLeather": "جلد مغربي",
+  "@morrocanLeather": {
+    "type": "text"
+  },
+  "resuableHouseholdItems": "الأدوات المنزلية التي يعاد استخدامها",
+  "@resuableHouseholdItems": {
+    "type": "text"
+  },
+  "ruiYang": "ريو يانج",
+  "@ruiYang": {
+    "type": "text"
+  },
+  "search": "بحث",
+  "@search": {
+    "type": "text"
+  },
+  "searchPlaceholder": "ابحث عن حرفي أو منتج",
+  "@searchPlaceholder": {
+    "type": "text"
+  },
+  "specialties": "التخصصات",
+  "@specialties": {
+    "type": "text"
+  },
+  "topRated": "الأعلى تقييمًا - 123",
+  "@topRated": {
+    "type": "text"
+  },
+  "wallets": "محافظ",
+  "@wallets": {
+    "type": "text"
+  },
+  "woodenArt": "فن خشبي",
+  "@woodenArt": {
+    "type": "text"
+  },
   "woodworking": "النجارة",
-  "resuableHouseholdItems": "الأدوات المنزلية التي يعاد استخدامها"
+  "@woodworking": {
+    "type": "text"
+  }
 }

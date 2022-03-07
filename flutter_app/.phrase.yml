@@ -1,0 +1,12 @@
+phrase:
+  project_id: 9f5c2c8460feaf9224f969069cc19ddb
+  push:
+    sources:
+    - file: ./lib/l10n/app_<locale_name>.arb
+      params:
+        file_format: arb
+  pull:
+    targets:
+    - file: ./lib/l10n/app_<locale_name>.arb
+      params:
+        file_format: arb
