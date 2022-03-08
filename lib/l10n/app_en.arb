@@ -94,5 +94,7 @@
   "woodworking": "Woodworking",
   "@woodworking": {
     "type": "text"
-  }
+  },
+  "account": "Account",
+  "email": "Email address"
 }
