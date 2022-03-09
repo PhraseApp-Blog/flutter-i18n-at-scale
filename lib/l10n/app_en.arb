@@ -31,6 +31,10 @@
   "@dayOfDeadSculptures": {
     "type": "text"
   },
+  "email": "Email address",
+  "@email": {
+    "type": "text"
+  },
   "facades": "Facades",
   "@facades": {
     "type": "text"
@@ -41,6 +45,10 @@
   },
   "featuredCreators": "Featured Creators",
   "@featuredCreators": {
+    "type": "text"
+  },
+  "foozle": "Foozle",
+  "@foozle": {
     "type": "text"
   },
   "halaMahmoud": "Hala Mahmoud",
@@ -83,6 +91,10 @@
   "@topRated": {
     "type": "text"
   },
+  "username": "Username",
+  "@username": {
+    "type": "text"
+  },
   "wallets": "Wallets",
   "@wallets": {
     "type": "text"
@@ -95,6 +107,5 @@
   "@woodworking": {
     "type": "text"
   },
-  "account": "Account",
-  "email": "Email address"
+  "foozle": ""
 }

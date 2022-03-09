@@ -31,6 +31,10 @@
   "@dayOfDeadSculptures": {
     "type": "text"
   },
+  "email": "البريد الاكتروني",
+  "@email": {
+    "type": "text"
+  },
   "facades": "واجهات",
   "@facades": {
     "type": "text"
@@ -41,6 +45,10 @@
   },
   "featuredCreators": "الحرفيين المميزين",
   "@featuredCreators": {
+    "type": "text"
+  },
+  "foozle": "فوزل",
+  "@foozle": {
     "type": "text"
   },
   "halaMahmoud": "هاله محمود",
@@ -81,6 +89,10 @@
   },
   "topRated": "الأعلى تقييمًا - 123",
   "@topRated": {
+    "type": "text"
+  },
+  "username": "إسم المستخدم",
+  "@username": {
     "type": "text"
   },
   "wallets": "محافظ",
