@@ -107,5 +107,6 @@
   "@woodworking": {
     "type": "text"
   },
-  "foozle": ""
+  "theme": "Theme",
+  "darkMode": "Dark mode"
 }
