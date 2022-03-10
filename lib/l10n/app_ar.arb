@@ -27,6 +27,10 @@
   "@danielGarcia": {
     "type": "text"
   },
+  "darkMode": "الوضع المظلم",
+  "@darkMode": {
+    "type": "text"
+  },
   "dayOfDeadSculptures": "تماثيل يوم الموتى المكسيكي",
   "@dayOfDeadSculptures": {
     "type": "text"
@@ -85,6 +89,10 @@
   },
   "specialties": "التخصصات",
   "@specialties": {
+    "type": "text"
+  },
+  "theme": "سمة",
+  "@theme": {
     "type": "text"
   },
   "topRated": "الأعلى تقييمًا - 123",
