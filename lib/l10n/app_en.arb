@@ -27,6 +27,10 @@
   "@danielGarcia": {
     "type": "text"
   },
+  "darkMode": "Dark mode",
+  "@darkMode": {
+    "type": "text"
+  },
   "dayOfDeadSculptures": "Mexican Day of the Dead (Día de Muertos) sculptures",
   "@dayOfDeadSculptures": {
     "type": "text"
@@ -87,6 +91,10 @@
   "@specialties": {
     "type": "text"
   },
+  "theme": "Theme",
+  "@theme": {
+    "type": "text"
+  },
   "topRated": "Top Rated",
   "@topRated": {
     "type": "text"
@@ -106,7 +114,5 @@
   "woodworking": "Woodworking",
   "@woodworking": {
     "type": "text"
-  },
-  "theme": "Theme",
-  "darkMode": "Dark mode"
+  }
 }
