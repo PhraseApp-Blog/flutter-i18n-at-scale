@@ -114,5 +114,9 @@
   "woodworking": "Woodworking",
   "@woodworking": {
     "type": "text"
-  }
+  },
+  "artisanChat": "Artisan chat",
+  "createPost": "Create a post",
+  "publish": "Publish",
+  "rulesOfConduct": "Rules of conduct"
 }
