@@ -7,6 +7,10 @@
   "@appTitle": {
     "type": "text"
   },
+  "artisanChat": "Artisan chat",
+  "@artisanChat": {
+    "type": "text"
+  },
   "belts": "Belts",
   "@belts": {
     "type": "text"
@@ -21,6 +25,10 @@
   },
   "chineseTeapots": "Chinese teapots",
   "@chineseTeapots": {
+    "type": "text"
+  },
+  "createPost": "Create a post",
+  "@createPost": {
     "type": "text"
   },
   "danielGarcia": "Daniel Garcia",
@@ -71,12 +79,20 @@
   "@morrocanLeather": {
     "type": "text"
   },
+  "publish": "Publish",
+  "@publish": {
+    "type": "text"
+  },
   "resuableHouseholdItems": "Reusable household items",
   "@resuableHouseholdItems": {
     "type": "text"
   },
   "ruiYang": "Rui Yang",
   "@ruiYang": {
+    "type": "text"
+  },
+  "rulesOfConduct": "Rules of conduct",
+  "@rulesOfConduct": {
     "type": "text"
   },
   "search": "Search",

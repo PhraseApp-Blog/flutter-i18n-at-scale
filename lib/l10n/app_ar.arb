@@ -7,6 +7,10 @@
   "@appTitle": {
     "type": "text"
   },
+  "artisanChat": "دردشة الحرفيين",
+  "@artisanChat": {
+    "type": "text"
+  },
   "belts": "أحزمة",
   "@belts": {
     "type": "text"
@@ -21,6 +25,10 @@
   },
   "chineseTeapots": "أقداح الشاي الصينية",
   "@chineseTeapots": {
+    "type": "text"
+  },
+  "createPost": "إنشاء منشور",
+  "@createPost": {
     "type": "text"
   },
   "danielGarcia": "دانيال جارسيا",
@@ -71,12 +79,20 @@
   "@morrocanLeather": {
     "type": "text"
   },
+  "publish": "نشر",
+  "@publish": {
+    "type": "text"
+  },
   "resuableHouseholdItems": "الأدوات المنزلية التي يعاد استخدامها",
   "@resuableHouseholdItems": {
     "type": "text"
   },
   "ruiYang": "ريو يانج",
   "@ruiYang": {
+    "type": "text"
+  },
+  "rulesOfConduct": "قواعد السلوك",
+  "@rulesOfConduct": {
     "type": "text"
   },
   "search": "بحث",
